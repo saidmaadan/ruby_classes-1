@@ -11,24 +11,24 @@ class Car
   end
   
   
-  def drive(miles)
-    if miles >= 500
-      puts "You have reach #{miles} miles. you're out of gas and need to fuel up."
+  def drive(distance)
+    if distance >= 500
+      puts "You have reach #{distance} miles. you're out of gas and need to fuel up."
     else
-      puts "You have reach #{miles} miles"
+      puts "You have reach #{distance} miles"
     end
   end
   
-  def fuel_up(gallon)
-    puts "Your total amount is $#{gallon*3.50}"
+  def fuel_up(fuel)
+    puts "Your total amount is $#{fuel*3.50}"
   end
     
 end
 car_a = Car.new
 car_b = Car.new
-#my_car.setup(20,5)
-# car_a.get_info
-# car_b.get_info
+car_a
+car_a.get_info
+car_b.get_info
 car_a.drive(500)
 car_a.fuel_up(20)
 
